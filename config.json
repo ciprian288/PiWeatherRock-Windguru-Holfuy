@@ -1,0 +1,24 @@
+{
+  "ds_api_key": "7c813eaa851d6c5ad87df46863a0dec6",
+  "holfuy_api_key": "null",
+  "id_station": "2708",
+  "lat": 43.813049,
+  "lon": 28.572492,
+  "units": "metric",
+  "fullscreen": true,
+  "12hour_disp": false,
+  "icon_offset": -5,
+  "update_freq": 150,
+  "info_pause": 3,
+  "info_delay": 6,
+  "plugins": {
+    "daily": {
+      "enabled": true,
+      "pause": 3
+    },
+    "hourly": {
+      "enabled": true,
+      "pause": 3
+    }
+  }
+}

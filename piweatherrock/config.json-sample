@@ -1,0 +1,25 @@
+{
+    "version": "1.4.0",
+    "ds_api_key": "API_KEY_HERE",
+    "lat": 0.112358,
+    "lon": 0.246810,
+    "units": "us",
+    "lang": "en",
+    "fullscreen": true,
+    "icon_offset": -23.5,
+    "update_freq": 300,
+    "info_pause": 300,
+    "info_delay": 900,
+    "log_level": "INFO",
+    "12hour_disp": true,
+    "plugins": {
+        "daily": {
+            "enabled": true,
+            "pause": 60
+        },
+        "hourly": {
+            "enabled": true,
+            "pause": 60
+        }
+    }
+}
