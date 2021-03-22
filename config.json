@@ -7,18 +7,18 @@
   "units": "metric",
   "fullscreen": true,
   "12hour_disp": false,
-  "icon_offset": -5,
+  "icon_offset": -20,
   "update_freq": 150,
-  "info_pause": 3,
-  "info_delay": 6,
+  "info_pause": 5,
+  "info_delay": 10,
   "plugins": {
     "daily": {
       "enabled": true,
-      "pause": 3
+      "pause": 5
     },
     "hourly": {
       "enabled": true,
-      "pause": 3
+      "pause": 5
     }
   }
 }
