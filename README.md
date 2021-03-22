@@ -39,7 +39,7 @@ sudo apt-get install python3
    pip3 install requests
    ```
    ```sh
-   git clone https://github.com/ciprian288/PiWeatherRock-Weather-Wind.git PiWeatherRockWind
+   git clone https://github.com/ciprian288/PiWeatherRock-Windguru-Holfuy.git PiWeatherRockWind
    ```
 # Scripts for autostart
 
