@@ -23,9 +23,9 @@ The end result is a modern version of a weather rock.
 
 # Install requirements:
 
-   ```sh
-   sudo apt-get install python3
-   ```
+```sh
+sudo apt-get install python3
+```
    ```sh
    sudo apt-get install python3-pip
    ```
@@ -53,7 +53,7 @@ The end result is a modern version of a weather rock.
    ```sh
    sudo systemctl enable PiWeatherRockConfig.service
    ```
-    ```sh
+   ```sh
    sudo systemctl enable PiWeatherRock.service
    ```
    ```sh
