@@ -1,0 +1,16 @@
+[Unit]
+Description=PiWeatherRock Config Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+Environment='DISPLAY=:0'
+ExecStart=python3 ~/PiWeatherRockWind/pwr-webconfig -c ~/PiWeatherRockWind/config.json
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
