@@ -72,6 +72,7 @@ sudo apt-get install python3
    ```sh
    sudo systemctl restart PiWeatherRockConfig.service
    ```
-       
+* If the wind is set, the color of the watch (blue, green, orange, brown, purple) changes according to the wind speed       
+
 # To EXIT PiWeatherRock-Windguru-Holfuy -- press Q
 
