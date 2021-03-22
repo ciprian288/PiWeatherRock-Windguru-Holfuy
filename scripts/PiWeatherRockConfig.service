@@ -8,7 +8,7 @@ User=pi
 Group=pi
 WorkingDirectory=/home/pi
 Environment='DISPLAY=:0'
-ExecStart=python3 ~/PiWeatherRockWind/pwr-webconfig -c ~/PiWeatherRockWind/config.json
+ExecStart=python3 /home/pi/PiWeatherRockWind/pwr-webconfig -c /home/pi/PiWeatherRockWind/config.json
 Restart=always
 RestartSec=5
 
