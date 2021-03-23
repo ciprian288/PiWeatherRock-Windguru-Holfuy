@@ -72,10 +72,13 @@ The end result is a modern version of a weather rock.
    ```
 * For your locale:
    ```sh
-   locale -a 
+   locale -a   # find your locale
    ```
    ```sh
    sudo update-locale LC_TIME=xx_XX.UTF-8    # replace xx-XX with your locale 
+   ```
+   ```sh
+   sudo reboot
    ```
 # Usage
 
