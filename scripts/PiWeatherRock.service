@@ -9,7 +9,7 @@ Group=pi
 WorkingDirectory=/home/pi
 Environment='DISPLAY=:0'
 ExecStartPre=/bin/sleep 30
-ExecStart=python3 /home/pi/PiWeatherRockWind/pwr-ui -c /home/pi/PiWeatherRockWind/config.json
+ExecStart=/usr/bin/python3 /home/pi/PiWeatherRockWind/pwr-ui -c /home/pi/PiWeatherRockWind/config.json
 Restart=always
 RestartSec=5
 
