@@ -15,7 +15,6 @@ import logging
 import logging.handlers
 
 # third party imports
-from darksky import forecast
 import pygame
 import requests
 
