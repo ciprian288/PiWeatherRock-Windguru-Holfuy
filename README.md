@@ -67,7 +67,10 @@ The end result is a modern version of a weather rock.
 
 * When PiWeatherRock starts, on the left side of the screen is your *RaspberryPi IP* (like: 10.0.2.15:8888 from screenshots) 
 * Put in any web browser *RaspberryPi IP* . It provides a web interface for configuring PiWeatherRock
-* Wave your mouse over the titles for instructions (The "API Meteo" key MUST BE CHANGED because it is a TEST key )
+* Wave your mouse over the titles for instructions
+```diff
+- The "API Meteo" key MUST BE CHANGED because it is a TEST key 
+```
 * After `Update` your configuration restart PiWeatherRock.service with:
 
    ```sh
