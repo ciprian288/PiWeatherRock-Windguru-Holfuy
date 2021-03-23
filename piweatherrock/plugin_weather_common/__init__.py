@@ -6,7 +6,6 @@
 import datetime
 import pygame
 import time
-from requests import get
 from os import path
 
 
