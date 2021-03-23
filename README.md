@@ -33,17 +33,12 @@ The end result is a modern version of a weather rock.
    sudo apt-get install libsdl1.2-dev libsdl-ttf2.0-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libjpeg-dev libportmidi-dev libtimedate-perl
    ```
    ```sh
-   pip3 install pygame
-   ```
-   ```sh
-   pip3 install requests
-   ```
-   ```sh
-   pip3 install netifaces
-   ```
-   ```sh
    git clone https://github.com/ciprian288/PiWeatherRock-Windguru-Holfuy.git PiWeatherRockWind
    ```
+   ```sh
+   pip3 install -r ~/PiWeatherRockWind/requirements.txt
+   ```   
+
 # Scripts for autostart
 
 * The xhost command needs an active X server to run, it can run at the login screen, for example when lightdm loads. You can enable it by editing /etc/lightdm/lightdm.conf and adding the line:
@@ -51,7 +46,7 @@ The end result is a modern version of a weather rock.
 `xserver-command=X -s 0 -dpms`
 
    ```sh
-   sudo cp /home/pi/PiWeatherRockWind/scripts/{PiWeatherRock.service,PiWeatherRockConfig.service} /etc/systemd/system/
+   sudo cp ~/PiWeatherRockWind/scripts/{PiWeatherRock.service,PiWeatherRockConfig.service} /etc/systemd/system/
    ```
    ```sh
    sudo systemctl enable PiWeatherRockConfig.service
