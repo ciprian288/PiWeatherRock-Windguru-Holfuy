@@ -23,9 +23,9 @@ The end result is a modern version of a weather rock.
 
 # Install requirements:
 
-```sh
-sudo apt-get install python3
-```
+   ```sh
+   sudo apt-get install python3
+   ```
    ```sh
    sudo apt-get install python3-pip
    ```
@@ -37,6 +37,9 @@ sudo apt-get install python3
    ```
    ```sh
    pip3 install requests
+   ```
+   ```sh
+   pip3 install netifaces
    ```
    ```sh
    git clone https://github.com/ciprian288/PiWeatherRock-Windguru-Holfuy.git PiWeatherRockWind
