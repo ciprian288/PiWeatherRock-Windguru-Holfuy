@@ -74,7 +74,7 @@ The end result is a modern version of a weather rock.
 * After `Update` your configuration restart PiWeatherRock.service with:
 
    ```sh
-   sudo systemctl restart PiWeatherRockConfig.service
+   sudo systemctl restart PiWeatherRock.service
    ```
 * If the wind is set, the color of the watch and the wind data (blue, green, orange, brown, purple) changes according to the wind speed       
 
