@@ -63,6 +63,20 @@ The end result is a modern version of a weather rock.
    ```sh
    sudo systemctl start PiWeatherRock.service
    ```
+* For instaling clock font:
+   ```sh
+   sudo cp -r ~/PiWeatherRockWind/fonts/digital.ttf /usr/share/fonts/truetype/digital.ttf
+   ```
+   ```sh
+   fc-cache -f -v
+   ```
+* For your locale:
+   ```sh
+   locale -a 
+   ```
+   ```sh
+   sudo update-locale LC_TIME=xx_XX.UTF-8    # replace xx-XX with your locale 
+   ```
 # Usage
 
 * When PiWeatherRock starts, on the left side of the screen is your *RaspberryPi IP* (like: 10.0.2.15:8888 from screenshots) 
