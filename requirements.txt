@@ -1,0 +1,5 @@
+pygame
+pyserial
+requests
+cherrypy
+netifaces
