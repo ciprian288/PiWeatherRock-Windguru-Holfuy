@@ -30,12 +30,6 @@ The end result is a modern version of a weather rock.
    sudo apt-get install python3-pip
    ```
    ```sh
-   sudo apt-get install --no-install-recommends libgl1-mesa-dri lightdm  x11-xserver-utils xserver-xorg libjpeg-dev libportmidi-dev 
-   ```
-   ```sh
-   sudo apt-get install --no-install-recommends libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libtimedate-perl
-   ```
-   ```sh
    git clone https://github.com/ciprian288/PiWeatherRock-Windguru-Holfuy.git PiWeatherRockWind
    ```
    ```sh
