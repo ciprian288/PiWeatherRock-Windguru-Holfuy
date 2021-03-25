@@ -38,9 +38,7 @@ The end result is a modern version of a weather rock.
 
 # Scripts for autostart
 
-* The xhost command needs an active X server to run, it can run at the login screen, for example when lightdm loads. You can enable it by editing /etc/lightdm/lightdm.conf and adding the line:
-
-                    `xserver-command=X -s 0 -dpms`
+* The xhost command needs an active X server to run, it can run at the login screen, for example when lightdm loads. You can enable it by editing /etc/lightdm/lightdm.conf and adding the line:    `xserver-command=X -s 0 -dpms`
 
    ```sh
    sudo cp ~/PiWeatherRockWind/scripts/{PiWeatherRock.service,PiWeatherRockConfig.service} /etc/systemd/system/
