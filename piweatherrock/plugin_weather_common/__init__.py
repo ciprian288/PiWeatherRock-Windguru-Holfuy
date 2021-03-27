@@ -199,7 +199,7 @@ class PluginWeatherCommon:
 
         ip_text = small_font.render("IP " + str(ip) + ":8888", True, (128, 128, 128))
         ip_text_render = pygame.transform.rotate(ip_text, 90)
-        ip_text_rect = ip_text_render.get_rect(center=(10, 110))
+        ip_text_rect = ip_text_render.get_rect(center=(10, self.ymax * 0.25))
         self.screen.blit(ip_text_render, ip_text_rect)
 
         txt = conditions_font.render(str(cond), True, text_color)
