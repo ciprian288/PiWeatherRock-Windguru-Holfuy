@@ -43,9 +43,11 @@ class PluginInfo:
         text_color = (255, 255, 255)
         #font_name = "digital7"
 
-        if self.xmax <= 1024:
+        if 0 <= self.xmax <= 780:
+            icon_wind_size = '200'
+        if 781 <= self.xmax <= 1024:
             icon_wind_size = '400'
-        else:
+        if 1025 <= self.xmax:
             icon_wind_size = '700'
 
         regular_font = pygame.font.SysFont(font_name, int(self.ymax * 0.16), bold=1)
