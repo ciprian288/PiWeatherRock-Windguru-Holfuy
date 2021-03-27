@@ -147,7 +147,7 @@ class PluginWeatherCommon:
     
     def display_clock_line(self, label, cond, is_temp, multiplier=None): 
         if self.config["12hour_disp"]:
-            conditions_text_height = 0.26            # text hight for clock
+            conditions_text_height = 0.24            # text hight for clock
             y_start_position = 0.25                  # y position clock
             second_column_x_start_position = 0.42    # x position clock
         else:
