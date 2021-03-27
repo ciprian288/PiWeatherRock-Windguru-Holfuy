@@ -298,10 +298,12 @@ class PluginWeatherCommon:
 
         icon_forecast = self.weather['daily'][index]['weather'][0]['icon']
         icon = pygame.image.load(
-            self.icon_mapping(icon_forecast, self.icon_size)).convert_alpha()
-        
+            self.icon_mapping(icon_forecast, self.icon_size)).convert_alpha()        
         (icon_size_x, icon_size_y) = icon.get_size()        
-        icon_y_offset = self.config["icon_offset"]
+        if icon_size_y < 90:
+            icon_y_offset = (90 - icon_size_y) / 2
+        else:
+            icon_y_offset = self.config["icon_offset"]
 
         self.screen.blit(icon, (self.xmax *
                             (subwindow_centers * c_times) -
@@ -354,8 +356,7 @@ class PluginWeatherCommon:
         
         icon_forecast = self.weather['hourly'][index]['weather'][0]['icon']
         icon = pygame.image.load(self.icon_mapping(icon_forecast, self.icon_size)).convert_alpha()
-        (icon_size_x, icon_size_y) = icon.get_size()
-        
+        (icon_size_x, icon_size_y) = icon.get_size()        
         if icon_size_y < 90:
             icon_y_offset = (90 - icon_size_y) / 2
         else:
