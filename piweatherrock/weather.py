@@ -117,9 +117,7 @@ class Weather:
             self.screen = pygame.display.set_mode(size, pygame.RESIZABLE)
             pygame.display.set_caption('PiWeatherRock')
             self.xmax = pygame.display.get_surface().get_width() - 15
-            self.ymax = pygame.display.get_surface().get_height() - 5
-
-            print(self.config["units"])
+            self.ymax = pygame.display.get_surface().get_height() - 5           
 
         if 0 <= self.xmax <= 780:
             self.icon_size = '64'
