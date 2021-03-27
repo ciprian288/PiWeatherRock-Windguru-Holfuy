@@ -73,9 +73,10 @@ class PluginWeatherCommon:
         
         self.disp_time_date(font_name, text_color)
         self.disp_current_temp(font_name, text_color)
-        self.display_clock_line(
-            '', time.strftime("%H:%M", time.localtime()),
-            False)        
+        if self.config["12hour_disp"]:
+            self.display_clock_line('', time.strftime("%I:%M.%p", time.localtime()), False)
+        else:
+            self.display_clock_line('', time.strftime("%H:%M", time.localtime()), False)
 
     def disp_time_date(self, font_name, text_color):
         # Time & Date
@@ -87,8 +88,8 @@ class PluginWeatherCommon:
             int(self.ymax * self.time_date_small_text_height), bold=1)
 
         if self.config["12hour_disp"]:
-            time_string = time.strftime("%A, %b %d   %I:%M", time.localtime())
-            am_pm_string = time.strftime(" %p", time.localtime())
+            time_string = time.strftime("%A - %b %d", time.localtime())
+            am_pm_string = ""
         else:
             time_string = time.strftime("%A - %d %B", time.localtime())
             am_pm_string = ""
@@ -145,13 +146,19 @@ class PluginWeatherCommon:
     
     
     def display_clock_line(self, label, cond, is_temp, multiplier=None): 
-        y_start_position = 0.2
+        if self.config["12hour_disp"]:
+            conditions_text_height = 0.26            # text hight for clock
+            y_start_position = 0.25                  # y position clock
+            second_column_x_start_position = 0.42    # x position clock
+        else:
+            conditions_text_height = 0.36            # text hight for clock
+            y_start_position = 0.2                   # y position clock
+            second_column_x_start_position = 0.45    # x position clock
+        
         line_spacing_gap = 0.065
-        conditions_text_height = 0.36 # text hight for clock
         degree_symbol_height = 0.1
         degree_symbol_y_offset = 0.001
-        x_start_position = 0.35
-        second_column_x_start_position = 0.45 
+        x_start_position = 0.35        
         #font_name = "freesans"
 
         if multiplier is None:
