@@ -121,11 +121,13 @@ class Weather:
 
             print(self.config["units"])
 
-        if self.xmax <= 1024:
+        if 0 <= self.xmax <= 780:
+            self.icon_size = '64'
+        if 781 <= self.xmax <= 1024:
             self.icon_size = '128'
-        else:
+        if 1025 <= self.xmax:
             self.icon_size = '256'
-
+            
     def get_forecast(self):
         """
         Gets updated information if the 'update_freq' amount of time has
