@@ -87,7 +87,7 @@ The end result is a modern version of a weather rock.
 ```diff
 - The "API Meteo" key MUST BE CHANGED because it is a TEST key 
 ```
-* After `Update` your configuration restart PiWeatherRock.service with:
+* After `Update` your configuration (on web interface) restart PiWeatherRock.service with:
 
    ```sh
    sudo systemctl restart PiWeatherRock.service
