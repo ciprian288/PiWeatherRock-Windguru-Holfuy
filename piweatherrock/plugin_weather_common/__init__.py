@@ -148,12 +148,12 @@ class PluginWeatherCommon:
     def display_clock_line(self, label, cond, is_temp, multiplier=None): 
         if self.config["12hour_disp"]:
             conditions_text_height = 0.24            # text hight for clock
-            y_start_position = 0.25                  # y position clock
-            second_column_x_start_position = 0.42    # x position clock
+            y_start_position = 0.34                  # y position clock
+            second_column_x_start_position = 0.7     # x position clock
         else:
             conditions_text_height = 0.36            # text hight for clock
-            y_start_position = 0.2                   # y position clock
-            second_column_x_start_position = 0.45    # x position clock
+            y_start_position = 0.32                  # y position clock
+            second_column_x_start_position = 0.7     # x position clock
         
         line_spacing_gap = 0.065
         degree_symbol_height = 0.1
@@ -203,8 +203,8 @@ class PluginWeatherCommon:
         self.screen.blit(ip_text_render, ip_text_rect)
 
         txt = conditions_font.render(str(cond), True, text_color)
-        self.screen.blit(txt, (self.xmax * second_column_x_start_position,
-                               self.ymax * y_start))
+        txt_rect = txt.get_rect(center=(self.xmax * second_column_x_start_position, self.ymax * y_start))
+        self.screen.blit(txt, txt_rect)
 
     def get_temperature_letter(self, unit):
         """
