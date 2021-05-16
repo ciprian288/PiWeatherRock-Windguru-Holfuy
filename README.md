@@ -72,6 +72,13 @@ The end result is a modern version of a weather rock.
    ```sh
    sudo reboot
    ```
+   or
+   ```sh
+   sudo dpkg-reconfigure locales   # reconfigure all locales 
+   ```
+   ```sh
+   sudo reboot
+   ```
 # Usage
 
 * When PiWeatherRock starts, on the left side of the screen is your *RaspberryPi IP* (like: 10.0.2.15:8888 from screenshots) 
