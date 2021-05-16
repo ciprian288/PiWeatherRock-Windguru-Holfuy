@@ -74,7 +74,7 @@ The end result is a modern version of a weather rock.
    ```
    or
    ```sh
-   sudo dpkg-reconfigure locales   # reconfigure all locales 
+   sudo dpkg-reconfigure locales   # select your locales 
    ```
    ```sh
    sudo reboot
