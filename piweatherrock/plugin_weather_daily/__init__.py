@@ -33,7 +33,7 @@ class PluginWeatherDaily:
         
         # Today
         today = self.weather['daily'][0]['dt']
-        today_string = "Today"
+        today_string = "Heute"
         multiplier = 1
         self.weather_common.display_subwindow_daily(today, today_string, multiplier, 0)
 
