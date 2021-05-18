@@ -77,19 +77,19 @@ class PluginInfo:
             wind_gust = self.wind['wind_max']
             wind_dir = self.wind['wind_direction']
 
-            if 0 <= wind_speed <= 14:
+            if 0 <=  wind_gust <= 16:
                 text_regular = (51, 187, 255)
                 icon_wind = path.join(path.dirname(__file__), 'icons/blue/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 14.1 < wind_speed <= 17:
+            if 16.1 <  wind_gust <= 20:
                 text_regular = (97, 209, 97)
                 icon_wind = path.join(path.dirname(__file__), 'icons/green/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 17.1 < wind_speed <= 24:
+            if 20.1 <  wind_gust <= 24:
                 text_regular = (255, 182, 32)
                 icon_wind = path.join(path.dirname(__file__), 'icons/orange/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 24.1 < wind_speed <= 30:
+            if 24.1 <  wind_gust <= 30:
                 text_regular = (255, 102, 0)
                 icon_wind = path.join(path.dirname(__file__), 'icons/brown/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 30.1 < wind_speed <= 500:
+            if 30.1 <  wind_gust <= 500:
                 text_regular = (255, 26, 140)
                 icon_wind = path.join(path.dirname(__file__), 'icons/purple/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
 
@@ -122,19 +122,19 @@ class PluginInfo:
             wind_gust = self.wind['wind']['gust']
             wind_dir = self.wind['wind']['direction']
 
-            if 0 <= wind_speed <= 14:
+            if 0 <=  wind_gust <= 16:
                 text_regular = (51, 187, 255)
                 icon = path.join(path.dirname(__file__), 'icons/blue/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 14.1 < wind_speed <= 17:
+            if 16.1 <  wind_gust <= 20:
                 text_regular = (97, 209, 97)
                 icon = path.join(path.dirname(__file__), 'icons/green/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 17.1 < wind_speed <= 24:
+            if 20.1 <  wind_gust <= 24:
                 text_regular = (255, 182, 32)
                 icon = path.join(path.dirname(__file__), 'icons/orange/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 24.1 < wind_speed <= 30:
+            if 24.1 <  wind_gust <= 30:
                 text_regular = (255, 102, 0)
                 icon = path.join(path.dirname(__file__), 'icons/brown/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
-            if 30.1 < wind_speed <= 500:
+            if 30.1 < wind_gust <= 500:
                 text_regular = (255, 26, 140)
                 icon = path.join(path.dirname(__file__), 'icons/purple/{}/{}.png'.format(icon_wind_size, self.deg_to_compass(wind_dir)))
 
