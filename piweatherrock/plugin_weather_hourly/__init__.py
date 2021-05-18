@@ -45,7 +45,7 @@ class PluginWeatherHourly:
         if self.config["12hour_disp"]:
             this_hour_string = "{} {}".format(str(this_hour_12_int), ampm)
         else:
-            this_hour_string = "{} {}".format(str(this_hour_24_int), "Std")
+            this_hour_string = "{} {}".format(str(this_hour_24_int), "H")
         multiplier = 1
         self.weather_common.display_subwindow_hourly(this_hour, this_hour_string, multiplier, 0)
 
@@ -64,7 +64,7 @@ class PluginWeatherHourly:
             if self.config["12hour_disp"]:
                 this_hour_string = "{} {}".format(str(this_hour_12_int), ampm)
             else:
-                this_hour_string = "{} {}".format(str(this_hour_24_int), "Std")
+                this_hour_string = "{} {}".format(str(this_hour_24_int), "H")
             multiplier += 2
             self.weather_common.display_subwindow_hourly(this_hour, this_hour_string, multiplier, i + 1)
 
