@@ -171,27 +171,27 @@ class PluginWeatherCommon:
             text_color = (51, 187, 255)
         
         elif self.config["holfuy_api_key"] == "null":
-            if 0 <= self.wind['wind_avg'] <= 14:
+            if 0 <= self.wind['wind_max'] <= 16:
                 text_color = (51, 187, 255)
-            if 14.1 < self.wind['wind_avg'] <= 17:
+            if 16.1 < self.wind['wind_max'] <= 20:
                 text_color = (97, 209, 97)
-            if 17.1 < self.wind['wind_avg'] <= 24:
+            if 20.1 < self.wind['wind_max'] <= 24:
                 text_color = (255, 182, 32)
-            if 24.1 < self.wind['wind_avg'] <= 30:
+            if 24.1 < self.wind['wind_max'] <= 30:
                 text_color = (255, 102, 0)
-            if 30.1 < self.wind['wind_avg'] <= 500:
+            if 30.1 < self.wind['wind_max'] <= 500:
                 text_color = (255, 26, 140)  
             
         else:
-            if 0 <= self.wind['wind']['speed'] <= 14:
+            if 0 <= self.wind['wind']['gust'] <= 16:
                 text_color = (51, 187, 255)
-            if 14.1 < self.wind['wind']['speed'] <= 17:
+            if 16.1 < self.wind['wind']['gust'] <= 20:
                 text_color = (97, 209, 97)
-            if 17.1 < self.wind['wind']['speed'] <= 24:
+            if 20.1 < self.wind['wind']['gust'] <= 24:
                 text_color = (255, 182, 32)
-            if 24.1 < self.wind['wind']['speed'] <= 30:
+            if 24.1 < self.wind['wind']['gust'] <= 30:
                 text_color = (255, 102, 0)
-            if 30.1 < self.wind['wind']['speed'] <= 500:
+            if 30.1 < self.wind['wind']['gust'] <= 500:
                 text_color = (255, 26, 140)    
 
         conditions_font = pygame.font.SysFont(font_clock, int(self.ymax * conditions_text_height), bold=1)
