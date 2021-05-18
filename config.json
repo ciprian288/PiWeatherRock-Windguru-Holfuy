@@ -7,7 +7,7 @@
   "units": "metric",
   "fullscreen": true,
   "12hour_disp": false,
-  "icon_offset": -20,
+  "icon_offset": -10,
   "update_freq": 150,
   "info_pause": 5,
   "info_delay": 10,
