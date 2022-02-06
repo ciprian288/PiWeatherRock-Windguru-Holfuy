@@ -91,7 +91,7 @@ class PluginWeatherCommon:
             time_string = time.strftime("%A - %b %d", time.localtime())
             am_pm_string = ""
         else:
-            time_string = time.strftime("%A - %d %B", time.localtime())
+            time_string = time.strftime("%A - %d %b", time.localtime())
             am_pm_string = ""
 
         rendered_time_string = time_date_font.render(time_string.capitalize(), True,
