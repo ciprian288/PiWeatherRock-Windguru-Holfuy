@@ -209,12 +209,5 @@ class Runner:
                 self.info.disp_info(self.my_weather_rock)
 
     def check_forecast(self):
-        try:
-            self.my_weather_rock.get_forecast()
-        # includes simplejson.decoder.JSONDecodeError
-        except ValueError:
-            self.my_weather_rock.log.exception(
-                f"Decoding JSON has failed: {sys.exc_info()[0]}")
-        except BaseException:
-            self.my_weather_rock.log.exception(
-                f"Unexpected error: {sys.exc_info()[0]}")
+        self.my_weather_rock.get_forecast()
+        
