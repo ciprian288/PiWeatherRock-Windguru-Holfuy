@@ -17,7 +17,7 @@ The end result is a modern version of a weather rock.
   https://piweatherrock.technicalissues.us .
   
 * Right now all data is pulled from:
-     - OpenWetherMap  https://openweathermap.org/api/one-call-api
+     - OpenWetherMap "One Call API 3.0" https://openweathermap.org/api/one-call-3
      - Windguru https://www.windguru.cz
      - Holfuy https://api.holfuy.com/
 
