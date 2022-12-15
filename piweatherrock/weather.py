@@ -23,7 +23,7 @@ import locale
 locale.setlocale(locale.LC_TIME, "")
 
 url_holfuy = "http://api.holfuy.com/live/?s={s}&pw={pw}&&m=JSON&tu=C&su=knots&batt"
-url_owm = "https://api.openweathermap.org/data/2.5/onecall?"
+url_owm = "https://api.openweathermap.org/data/3.0/onecall?"
 
 # globals
 UNICODE_DEGREE = u'\xb0'
@@ -139,7 +139,7 @@ class Weather:
                 "lon": self.config["lon"],
                 "units": self.config["units"],
                 "apikey": self.config["ds_api_key"],
-                "exclude": "minutely"                
+                "exclude": "minutely,alerts"                
                 }
                 self.weather = requests.request("GET", url_owm, params=querystring_owm).json()
 
