@@ -93,7 +93,10 @@ The end result is a modern version of a weather rock.
    ```sh
    sudo systemctl restart PiWeatherRock.service
    ```
-* If the wind is set, the color of the watch and the wind data (blue, green, orange, brown, purple) changes according to the wind speed       
+* If the wind is set, the color of the watch and the wind data (blue, green, orange, brown, purple) changes according to the wind speed
+* To display wind data from Windgru, set in the web interface for configuring PiWeatherRock the "API Holfuy" to null and the station ID number from a real wind station like " https://www.windguru.cz/station/2708 " , not the forecasted one. The station ID can be found by accessing the desired station on holfuy.com or windguru.cz, being the number at the end of the link. 
+* If you don't want the wind page to be displayed, go to the 'Wind screen' section in the web interface for configuring PiWeatherRock and set the pause to 0.
+     
 
 # To EXIT PiWeatherRock-Windguru-Holfuy -- press Q
 
